@@ -1,0 +1,10 @@
+services:
+  postgresql:
+    container_name: postgresql
+    image: bitnami/postgresql
+    ports:
+      - 54321:5432
+    environment:
+      - POSTGRESQL_USERNAME=docker
+      - POSTGRESQL_PASSWORD=docker
+      - POSTGRESQL_DATABASE=academy
